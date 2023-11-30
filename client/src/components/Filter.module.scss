@@ -1,0 +1,37 @@
+.filter{
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+
+  &_search{
+    background-color: #c7c7c7;
+    border: 1px #000 solid;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &_info{
+    background-color: #c7c7c7;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_selecter{
+      border: 1px #000 solid;
+      margin-right: 35px;
+      display: flex;
+      align-items: center;
+    }
+
+    &_checkbox{
+      margin-right: 5px;
+    }
+  }
+
+
+}

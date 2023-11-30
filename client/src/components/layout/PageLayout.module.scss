@@ -1,0 +1,8 @@
+@use '../../styles/uiKit' as *;
+
+
+.page {
+  padding: 85px 15px;
+
+  @extend %container;
+}

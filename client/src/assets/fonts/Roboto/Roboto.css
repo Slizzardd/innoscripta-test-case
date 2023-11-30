@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('Roboto-Light.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('Roboto-Medium.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('Roboto-Bold.ttf') format('truetype');
+  font-weight: 600;
+}

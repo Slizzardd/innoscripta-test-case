@@ -1,0 +1,57 @@
+# Node.js
+node_modules/
+
+# React.js
+/build/
+/dist/
+/.cache/
+*.log
+
+# Maven
+/target/
+/.mvn/
+*.log
+*.iml
+
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Logs
+*.log
+log/
+logs/
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Compiled Java classes
+*.class
+*.jar
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Gradle
+/.gradle/
+
+# Spring Boot
+spring-boot-starter-*.log
+
+# IDE-specific
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+*.userosscache

@@ -1,0 +1,56 @@
+@import '../assets/fonts/Roboto/Roboto.css';
+
+
+*, :before, :after {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+
+  border: 0;
+  outline: 0;
+
+  background-color: transparent;
+}
+
+button {
+  padding: 8px 16px;
+  border: 1px #000 solid;
+  border-radius: 8px;
+  transition: .4s;
+  cursor: pointer;
+  background-color: #fff;;
+
+  &:hover {
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3) inset;
+  }
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+body {
+  background: linear-gradient(#999, #000) no-repeat;
+  min-height: 100dvh;
+
+}

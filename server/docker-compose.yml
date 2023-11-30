@@ -1,0 +1,40 @@
+version: '3.8'
+services:
+  innoscripta-case-server:
+    build:
+      context: .
+    image: innoscripta-case-server
+    container_name: innoscripta-case-server
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    ports:
+      - "8080:8080"
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_PORT: 3306
+    networks:
+      - all-apps
+
+  mysql:
+    image: mysql:8.0.33
+    container_name: mysql
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: innoscripta
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - all-apps
+
+networks:
+  all-apps:
+    external: true
+
+volumes:
+  mysql-data:
+    external: false

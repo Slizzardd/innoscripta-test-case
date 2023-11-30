@@ -1,0 +1,42 @@
+@use '../../styles/uiKit' as *;
+
+
+.header{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px #000 solid;
+
+  &_wrapper{
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_nav{
+    display: flex;
+    gap: 10px;
+    &_item{
+      text-decoration: underline;
+    }
+  }
+
+
+  &_profileLink {
+    border: 1px #000 solid;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: .4s;
+    &:hover{
+      box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3) inset;
+    }
+  }
+}
